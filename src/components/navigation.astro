@@ -1,0 +1,19 @@
+---
+import Navbar from "./navbar.astro";
+---
+
+<style>
+  nav {
+    display: flex;
+    margin-top: 10px;
+  }
+</style>
+<nav>
+  <!-- <a href="/">Inicio</a>
+  <a href="/about/">Sobre mi</a>
+  <a href="/blog/">Blog</a> -->
+
+  <Navbar name="Inicio" url="" />
+  <Navbar name="About" url="about" />
+  <Navbar name="Blog" url="blog" />
+</nav>

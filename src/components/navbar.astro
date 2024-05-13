@@ -1,0 +1,25 @@
+---
+let { name, url } = Astro.props;
+
+if (name === "Inicio") {
+  url = "/";
+} else {
+  url = `/${url}/`;
+}
+---
+
+<style>
+  a {
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+  a:hover {
+    background-color: purple;
+    color: white;
+  }
+</style>
+
+<a href={`${url}`}>{`${name}`}</a>
